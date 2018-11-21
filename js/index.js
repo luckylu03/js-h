@@ -1,26 +1,26 @@
-let a = parseInt(prompt('enter a'));
-let b = parseInt(prompt('enter b'));
-let c = parseInt(prompt('enter c'));
+const a = parseInt(prompt('enter a:'));
+const b = parseInt(prompt('enter b:'));
+const c = parseInt(prompt('enter c:'));
 
-let d = b ** 2 - 4 * a * c;
+const d = b ** 2 - 4 * a * c;
 
 if (a!==0 && b!==0 && c!==0 && d>0) {
-    let x1 = calcSol(a, b, c, d);
-    let x2 = calcSol2(a, b, c, d);
+    const x1 = calcSol(a, b, c, d);
+    const x2 = calcSol2(a, b, c, d);
     alert('x1= ' + x1 + ' x2= ' + x2);
 } else if (a!==0 && b!==0 && c!==0 && d==0) {
-    let x = calcx (a, b, c, d);
+    const x = calcx (a, b, c, d);
     alert('x= ' + x + ' is the solution');
 } else if (a!==0 && b!==0 && c!==0 && d<0) {
     alert('No solutions');
 } else if (a==0) {
-    let x = calcIfa (b, c);
+    const x = calcIfa (b, c);
     alert('x= ' + x + ' is the solution');
 } else if (b==0) {
-    let x = calcIfb(a, c);
+    const x = calcIfb(a, c);
     alert('x= ' + x + ' is the solution');
 } else if (c==0) {
-    let x2 = calcIfc(a, b);
+    const x2 = calcIfc(a, b);
     alert('x1= ' + 0 + ' x2= ' + x2);
 } else {
     alert('Do not understand, please make sure you entered numbers');
