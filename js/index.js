@@ -9,18 +9,18 @@ if (a!==0 && b!==0 && c!==0 && d>0) {
     const x2 = calcSol2(a, b, c, d);
     alert('x1= ' + x1 + ' x2= ' + x2);
 } else if (a!==0 && b!==0 && c!==0 && d==0) {
-    const x = calcx (a, b, c, d);
+    const x = calcOnlySol (a, b, c, d);
     alert('x= ' + x + ' is the solution');
 } else if (a!==0 && b!==0 && c!==0 && d<0) {
     alert('No solutions');
 } else if (a==0) {
-    const x = calcIfa (b, c);
+    const x = calcIfaNull (b, c);
     alert('x= ' + x + ' is the solution');
 } else if (b==0) {
-    const x = calcIfb(a, c);
+    const x = calcIfbNull(a, c);
     alert('x= ' + x + ' is the solution');
 } else if (c==0) {
-    const x2 = calcIfc(a, b);
+    const x2 = calcIfcNull(a, b);
     alert('x1= ' + 0 + ' x2= ' + x2);
 } else {
     alert('Do not understand, please make sure you entered numbers');
@@ -34,18 +34,18 @@ function calcSol2(a, b, c, d) {
     return (-b - Math.sqrt(d))/(2 * a);
 }
 
-function calcx (a, b, c, d) {
+function calcOnlySol (a, b, c, d) {
     return (-b)/(2 * a);
 }
 
-function calcIfa (a, b) {
+function calcIfaNull (a, b) {
     return (-b)/a;
 }
 
-function calcIfb (a, b) {
+function calcIfbNull (a, b) {
     return Math.sqrt((-b)/(a));
 }
 
-function calcIfc (a, b) {
+function calcIfcNull (a, b) {
     return (-b)/(a);
 }
