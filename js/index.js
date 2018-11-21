@@ -13,10 +13,6 @@ if (a!==0 && b!==0 && c!==0 && d>0) {
     alert('x= ' + x + ' is the solution');
 } else if (a!==0 && b!==0 && c!==0 && d<0) {
     alert('No solutions');
-} else if (a==0 && b==0 && c==0) {
-    alert('no need to solve');
-}   else if (a==0 && b==0 && c!==0) {
-    alert('no solution');
 }   else if (a==0) {
     const x = calcIfa (b, c);
     alert('x= ' + x + ' is the solution');
