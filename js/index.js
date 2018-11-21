@@ -3,7 +3,7 @@ let b = parseInt(prompt('enter b'));
 let c = parseInt(prompt('enter c'));
 
 let d = b ** 2 - 4 * a * c;
-alert(d);
+
 if (a!==0 && b!==0 && c!==0 && d>0) {
     let x1 = calcSol(a, b, c, d);
     let x2 = calcSol2(a, b, c, d);
@@ -27,11 +27,11 @@ if (a!==0 && b!==0 && c!==0 && d>0) {
 }
 
 function calcSol(num1, num2, num3, num4) {
-        return (-num2 + Math.sqrt(num4))/(2 * num1);
+    return (-num2 + Math.sqrt(num4))/(2 * num1);
 }
 
 function calcSol2(num1, num2, num3, num4) {
-        return (-num2 - Math.sqrt(num4))/(2 * num1);
+    return (-num2 - Math.sqrt(num4))/(2 * num1);
 }
 
 function calcx (num1, num2, num3, num4) {
