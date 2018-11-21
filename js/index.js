@@ -1,6 +1,6 @@
-const a = parseInt(prompt('enter a:'));
-const b = parseInt(prompt('enter b:'));
-const c = parseInt(prompt('enter c:'));
+const a = parseFloat(prompt('enter a:'));
+const b = parseFloat(prompt('enter b:'));
+const c = parseFloat(prompt('enter c:'));
 
 const d = b ** 2 - 4 * a * c;
 
@@ -13,7 +13,11 @@ if (a!==0 && b!==0 && c!==0 && d>0) {
     alert('x= ' + x + ' is the solution');
 } else if (a!==0 && b!==0 && c!==0 && d<0) {
     alert('No solutions');
-} else if (a==0) {
+} else if (a==0 && b==0 && c==0) {
+    alert('no need to solve');
+}   else if (a==0 && b==0 && c!==0) {
+    alert('no solution');
+}   else if (a==0) {
     const x = calcIfa (b, c);
     alert('x= ' + x + ' is the solution');
 } else if (b==0) {
