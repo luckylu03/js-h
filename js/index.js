@@ -43,7 +43,7 @@ function calcIfa (num1, num2) {
 }
 
 function calcIfb (num1, num2) {
-    return Math.sqrt((-num2)/(num1))
+    return Math.sqrt((-num2)/(num1));
 }
 
 function calcIfc (num1, num2) {
