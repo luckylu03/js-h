@@ -26,26 +26,26 @@ if (a!==0 && b!==0 && c!==0 && d>0) {
     alert('Do not understand, please make sure you entered numbers');
 }
 
-function calcSol(num1, num2, num3, num4) {
-    return (-num2 + Math.sqrt(num4))/(2 * num1);
+function calcSol(a, b, c, d) {
+    return (-b + Math.sqrt(d))/(2 * a);
 }
 
-function calcSol2(num1, num2, num3, num4) {
-    return (-num2 - Math.sqrt(num4))/(2 * num1);
+function calcSol2(a, b, c, d) {
+    return (-b - Math.sqrt(d))/(2 * a);
 }
 
-function calcx (num1, num2, num3, num4) {
-    return (-num2)/(2 * num1);
+function calcx (a, b, c, d) {
+    return (-b)/(2 * a);
 }
 
-function calcIfa (num1, num2) {
-    return (-num2)/(num1);
+function calcIfa (a, b) {
+    return (-b)/a;
 }
 
-function calcIfb (num1, num2) {
-    return Math.sqrt((-num2)/(num1));
+function calcIfb (a, b) {
+    return Math.sqrt((-b)/(a));
 }
 
-function calcIfc (num1, num2) {
-    return (-num2)/(num1);
+function calcIfc (a, b) {
+    return (-b)/(a);
 }
